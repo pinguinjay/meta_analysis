@@ -46,7 +46,7 @@ funnel(gfr.meta)
 metabias(gfr.meta,method.bias="linreg",k.min=5,plotit=T)
 
 ## create contour enhanced funnel plot (with funnel centered at 0)
-install.packages("metafor")
+#install.packages("metafor")
 library(metafor)
 gfr.res <- rma(md, vi=se^2, data=gfr)
 gfr.res
