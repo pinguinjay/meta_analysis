@@ -1,6 +1,6 @@
 ### Example 1: Fuccio 2009 AIM
 # read data from Dataset0708.xlsx
-install.packages("readxl")
+#install.packages("readxl")
 
 # Loading
 library("readxl")
@@ -12,7 +12,7 @@ fuccio <- read.delim("clipboard")
 fuccio <- read_excel("Dataset0706.xlsx", sheet=1)
 fuccio
 
-install.packages("meta")
+#install.packages("meta")
 library(meta)
 
 fuccio.meta<-metabin(txcase,txtotal,cncase,cntotal,study,sm="OR",data=fuccio)
