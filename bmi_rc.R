@@ -1,7 +1,7 @@
 ## Qin Liu  et al A two-stage hierarchical regression model for meta-analysis of epidemiologic nonlinear dose-response data
 ## Table 6. Summary of published studies on the relation between BMI and renal cell cancer 
 # read data from Nishimura 2007.xlsx
-install.packages("readxl")
+#install.packages("readxl")
 
 # Loading
 library("readxl")
@@ -29,7 +29,7 @@ round(pred, 2)
 
 ## Linear trend centered at bmi = 19.3
 
-#  Create a new dataset with variable bmi = (19, 19.1, 19.2,?€?, 34.9, 35). This is because bmi is centered at 19.3
+#  Create a new dataset with variable bmi = (19, 19.1, 19.2,?â‚¬?, 34.9, 35). This is because bmi is centered at 19.3
 newdata = data.frame(bmi = seq(19, 35, 0.1))
 
 with(predict(lin, newdata, exp = TRUE, xref = min(bmi_rc$bmi)), {
